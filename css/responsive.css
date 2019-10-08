@@ -1,0 +1,211 @@
+/*	
+* Responsive CSS	
+* Contains the responsiveness components for the game.  
+*/
+
+.grid-container {
+	padding: 0 50px;
+	margin: 0 auto;
+}
+
+/* When not using Bootstrap, I have usually used the following values, taken from W3Schools. 
+*  I did not use grid or flex, due to bugs encountered in Internet Explorer 11+.
+*/
+
+.grid-1 {
+	width: 8.33%;
+}
+
+.grid-2 {
+	width: 16.66%;
+}
+
+.grid-3 {
+	width: 25%;
+}
+
+.grid-4 {
+	width: 33.33%;
+}
+
+.grid-5 {
+	width: 41.66%;
+}
+
+.grid-6 {
+	width: 50%;
+}
+
+.grid-7 {
+	width: 58.33%;
+}
+
+.grid-8 {
+	width: 66.66%;
+}
+
+.grid-9 {
+	width: 75%;
+}
+
+.grid-10 {
+	width: 83.33%;
+}
+
+.grid-11 {
+	width: 91.66%;
+}
+
+.grid-12 {
+	width: 100%;
+}
+
+@media (min-width: 600px) {
+	.grid-container {
+		max-width: 540px;
+	}
+	.grid-s-1 {
+		width: 8.33%;
+	}
+	.grid-s-2 {
+		width: 16.66%;
+	}
+	.grid-s-3 {
+		width: 25%;
+	}
+	.grid-s-4 {
+		width: 33.33%;
+	}
+	.grid-s-5 {
+		width: 41.66%;
+	}
+	.grid-s-6 {
+		width: 50%;
+	}
+	.grid-s-7 {
+		width: 58.33%;
+	}
+	.grid-s-8 {
+		width: 66.66%;
+	}
+	.grid-s-9 {
+		width: 75%;
+	}
+	.grid-s-10 {
+		width: 83.33%;
+	}
+	.grid-s-11 {
+		width: 91.66%;
+	}
+	.grid-s-12 {
+		width: 100%;
+	}
+}
+
+@media (min-width: 768px) {
+	.grid-container {
+		max-width: 720px;
+	}
+	.grid-m-1 {
+		width: 8.33%;
+	}
+	.grid-m-2 {
+		width: 16.66%;
+	}
+	.grid-m-3 {
+		width: 25%;
+	}
+	.grid-m-4 {
+		width: 33.33%;
+	}
+	.grid-m-5 {
+		width: 41.66%;
+	}
+	.grid-m-6 {
+		width: 50%;
+	}
+	.grid-m-7 {
+		width: 58.33%;
+	}
+	.grid-m-8 {
+		width: 66.66%;
+	}
+	.grid-m-9 {
+		width: 75%;
+	}
+	.grid-m-10 {
+		width: 83.33%;
+	}
+	.grid-m-11 {
+		width: 91.66%;
+	}
+	.grid-m-12 {
+		width: 100%;
+	}
+}
+
+@media (min-width: 992px) {
+	.grid-container {
+		max-width: 960px;
+	}
+	.grid-l-1 {
+		width: 8.33%;
+	}
+	.grid-l-2 {
+		width: 16.66%;
+	}
+	.grid-l-3 {
+		width: 25%;
+	}
+	.grid-l-4 {
+		width: 33.33%;
+	}
+	.grid-l-5 {
+		width: 41.66%;
+	}
+	.grid-l-6 {
+		width: 50%;
+	}
+	.grid-l-7 {
+		width: 58.33%;
+	}
+	.grid-l-8 {
+		width: 66.66%;
+	}
+	.grid-l-9 {
+		width: 75%;
+	}
+	.grid-l-10 {
+		width: 83.33%;
+	}
+	.grid-l-11 {
+		width: 91.66%;
+	}
+	.grid-l-12 {
+		width: 100%;
+	}
+}
+
+
+/*	Float	*/
+
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
+}
+
+.float-none {
+	float: none;
+	clear: both;
+}
+
+
+/* Responsive images */
+
+.responsive-image {
+	width: 100%;
+	height: auto;
+}

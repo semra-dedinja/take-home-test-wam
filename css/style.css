@@ -1,0 +1,136 @@
+/*	
+* Style CSS	
+* Contains the style of the game.
+*/
+
+body {
+	font-family: sans-serif;
+	background-color: #faebd7;
+}
+
+/*	Grids	*/
+
+.grid-all {
+	border: 2px solid #A9A9A9;
+	margin: 15px 0;
+	padding: 20px;
+	cursor: pointer;
+	
+}
+
+.grid-all:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.grid-box {
+	float: left;
+	position: relative;
+	overflow: hidden;
+	height: 225px;
+}
+
+
+/*	Header	*/
+
+.header-title {
+	text-align: center;
+}
+
+.header-wrap {
+	position: relative;
+}
+
+.header-wrap:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.score-border {
+	border: 2px solid #A9A9A9;
+	padding: 10px;
+	margin-left: 15px;
+}
+
+@media (max-width: 410px) {
+	.time-left, .score-border{
+		text-align: center;
+		float: none !important;
+	}
+	
+	.display-none{
+		display: none;
+	}
+	
+	.grid-box {
+		height: 150px;
+	}
+}
+
+@media (min-width: 411px) and (max-width: 600px) {
+	.display-s-none{
+		display: none;
+	}
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+	.display-m-none{
+		display: none;
+	}
+}
+
+#time {
+	display: block;
+}
+
+#score {
+	display: block;
+	text-align: center;
+}
+
+
+/*	Buttons	*/
+
+#startStopGame {
+	padding: 10px 15px;
+	background-color: #008000;
+	border-radius: 5px;
+	border: 1px solid #008000;
+	color: white;
+}
+
+#resetGame {
+	padding: 10px 15px;
+	background-color: #CCCC00;
+	border-radius: 5px;
+	border: 1px solid #CCCC00;
+	color: white;
+}
+
+
+/*	Game related components	*/
+
+.soil {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.mole {
+	width: 100%;
+	position: absolute;
+	bottom: -225px;
+	transition: bottom 0.5s ease-in-out;
+}
+
+.mole.up {
+	bottom: 0;
+}
+
+/*	Footer */
+.footer-text{
+	text-align: center;
+}

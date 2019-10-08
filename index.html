@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Take Home Test: Whack-a-mole</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+</head>
+
+<body>
+	<header class="grid-container">
+		<h2 class="header-title">Whack-a-mole</h2>
+		<div class="header-wrap">
+			<h3 class="float-left time-left">Time left: <span id="time">30 seconds remaining</span> </h3>
+			<h3 class="float-right score-border">Score: <span id="score">0</span> </h3>
+			
+			<div class="float-none"></div>
+			
+			<button class="float-left" id="startStopGame" onclick="startStopGame()">Start game</button>
+			<button class="float-right" id="resetGame" onclick="resetGame()">Reset game</button>
+		</div>		
+	</header>
+
+	<div class="grid-container">
+		<div class="grid-all">
+			<div class="grid-box grid-l-3 grid-m-3 grid-s-4 grid-6">
+				<img class="responsive-image mole" id="m-1" src="media/mole.png"/>
+				<img class="responsive-image soil" src="media/soil.png"/>
+			</div>	
+			<div class="grid-box grid-l-3 grid-m-3 grid-s-4 grid-6">
+				<img class="responsive-image mole" id="m-2"  src="media/mole.png"/>
+				<img class="responsive-image soil" src="media/soil.png"/>
+			</div>	
+			<div class="grid-box grid-l-3 grid-m-3 grid-s-4 grid-6">
+				<img class="responsive-image mole" id="m-3"  src="media/mole.png"/>
+				<img class="responsive-image soil" src="media/soil.png"/>
+			</div>	
+			<div class="grid-box grid-l-3 grid-m-3 grid-s-4 grid-6">
+				<img class="responsive-image mole" id="m-4"  src="media/mole.png"/>
+				<img class="responsive-image soil" src="media/soil.png"/>
+			</div>	
+			<div class="grid-box grid-l-3 grid-m-3 grid-s-4 grid-6 display-s-none">
+				<img class="responsive-image mole" id="m-5" src="media/mole.png"/>
+				<img class="responsive-image soil" src="media/soil.png"/>
+			</div>	
+			<div class="grid-box grid-l-3 grid-m-3 grid-s-4 grid-6 display-s-none">
+				<img class="responsive-image mole" id="m-6"  src="media/mole.png"/>
+				<img class="responsive-image soil" src="media/soil.png"/>
+			</div>	
+			<div class="grid-box grid-l-3 grid-m-3 grid-s-4 grid-6 display-m-none display-s-none display-none">
+				<img class="responsive-image mole" id="m-7"  src="media/mole.png"/>
+				<img class="responsive-image soil" src="media/soil.png"/>
+			</div>	
+			<div class="grid-box grid-l-3 grid-m-3 grid-s-4 grid-6 display-m-none display-s-none display-none">
+				<img class="responsive-image mole" id="m-8"  src="media/mole.png"/>
+				<img class="responsive-image soil" src="media/soil.png"/>
+			</div>	
+		</div>
+	</div>
+
+	<footer class="grid-container">
+		<div class="footer-text">
+			<h5>Original images were taken from <a href="https://www.flaticon.com/" target="_blank" title="Flaticon">Flaticon</a> and edited for the purpose of this game. The mole icon was made by <a href="https://www.flaticon.com/authors/darius-dan" target="_blank" title="Darius Dan">Darius Dan</a> and the soil icon was made by <a href="https://www.flaticon.com/authors/freepik" target="_blank" title="Freepik">Freepik</a></h5>
+			
+			<h5>The 'hit' sound was taken from <a href="https://freesound.org/people/CamoMano/sounds/431019/" target="_blank" title="Freesound">Freesound</a>.</h5>
+		</div>
+	</footer>
+	
+<script src="js/script.js"></script>
+</body>
+
+</html>
